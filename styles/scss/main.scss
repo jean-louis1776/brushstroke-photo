@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #654f75 0%,
+    #e03772 45%,
+    #aa5c58 77%,
+    #7e5671 100%
+  );
+
+  .photo {
+    background-image: url(../../assets/guy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 85%;
+    border-radius: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 20px;
+      background-image: url(../../assets/brush.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 95vh;
+      width: 85%;
+      mix-blend-mode: screen;
+    }
+  }
+}
